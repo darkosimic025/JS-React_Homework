@@ -1,0 +1,21 @@
+.treciNaslov {
+    padding-left: 120px;
+}
+
+.film {
+    width: 200px;
+}
+
+.linkovi td {
+    float: left;
+    width: 153px;
+}
+
+.slike, .linkovi, .filmovi2 {
+    float: left;
+}
+
+.paragraf {
+    display: block;
+    width: 700px;
+}

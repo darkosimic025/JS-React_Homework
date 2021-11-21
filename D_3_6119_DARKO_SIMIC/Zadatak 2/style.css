@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    width: 1000px;
+    
+}
+#prvi, #drugi, #treci {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
