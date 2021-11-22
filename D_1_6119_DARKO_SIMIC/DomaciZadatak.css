@@ -19,11 +19,11 @@ section> .naslov {
   margin: 30px;
 }
 .pozadina {
-  background-image: url("background.jpg");
+  background-image: url("slike/background.jpg");
   background-size: cover;
 }
 .pozadina2 {
-  background-image:url("canva.png") ;
+  background-image:url("slike/canva.png") ;
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
