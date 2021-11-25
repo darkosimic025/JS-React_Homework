@@ -46,6 +46,7 @@ label {
 
 form > div {
     clear: both;
+    overflow: hidden;
 }
 
 .search {
