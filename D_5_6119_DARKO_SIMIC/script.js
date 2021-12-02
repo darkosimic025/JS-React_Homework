@@ -15,10 +15,11 @@ let n = 220;
     ukupnoPoglavlja = n;
 let a = 50;
     procitanoPoglavlja = a + (a + 2);
+    preostaloPoglavlja = ukupnoPoglavlja - procitanoPoglavlja;
 
-console.log("Preostalo je procitati jos " + (ukupnoPoglavlja-procitanoPoglavlja) + " poglavlja.");
+console.log("Preostalo je procitati jos " + (preostaloPoglavlja) + " poglavlja.");
 
-if (ukupnoPoglavlja-procitanoPoglavlja<ukupnoPoglavlja/2) {
+if (preostaloPoglavlja<ukupnoPoglavlja/2) {
     console.log("Ostalo je da se procita manje od polovine knjige.");
 }
 
@@ -26,7 +27,7 @@ if (ukupnoPoglavlja-procitanoPoglavlja<ukupnoPoglavlja/2) {
 
 let u=4000
     kJ = u;
-let kcal = kJ * 4.1868;
+let kcal = kJ / 4.1868;
 
 if (kcal < 2000) {
     console.log("Potrebno je povećati dnevni unos.");
