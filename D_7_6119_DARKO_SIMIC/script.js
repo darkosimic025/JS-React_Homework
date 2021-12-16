@@ -19,10 +19,10 @@ function arSr(n, m) {
     for (n; n <= m; n++) {
         suma = suma + n;
         brojBrojeva++; 
-    } aritmetickaSredina = suma / brojBrojeva;
-    console.log(aritmetickaSredina);
+    }
+    return aritmetickaSredina = suma / brojBrojeva;
 }
-arSr(0, 10);
+console.log(arSr(0, 10));
 
 // 3.Zadatak_____________________________________________________________________________________________________
 
@@ -36,10 +36,9 @@ function arSr3(n, m) {
             brojBrojeva++;
         }
     }
-    aritmetickaSredina = suma / brojBrojeva;
-    console.log(aritmetickaSredina);
+    return aritmetickaSredina = suma / brojBrojeva;
 }
-arSr3(0, 13);
+console.log(arSr3(0, 13));
 
 // 4.Zadatak_________________________________________________________________________________________________________
 
