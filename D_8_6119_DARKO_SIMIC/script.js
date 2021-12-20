@@ -20,7 +20,7 @@ let znak = niz => {
     for (let i = 0; i < niz.length; i++) {
         if (i % 2 == 0) {
             if (niz[i] % 2 != 0) {
-                niz[i] = niz[i] * -1;
+                niz[i] *= (-1);
             } 
         } 
     } return niz;
