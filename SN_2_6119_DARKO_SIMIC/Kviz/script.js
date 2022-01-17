@@ -34,22 +34,22 @@ let pitanje7 = {
     indeksTacnogOdgovora: 1
 };
 let pitanje8 = {
-    tekst: "Stenli Kjubrik je rodjen u :",
-    odgovori: ["Njujorku", "Cikagu", "Los Andjelesu", "San Francisku"],
+    tekst: "Ko je zamenio Stenlija Kjubrika kao rezisera za film Vestacka inteligencija nakon njegove smrti:",
+    odgovori: ["Stiven Spilberg", "Dejvid Fincer", "Kristofer Nolan", "Giljermo Del Toro"],
     indeksTacnogOdgovora: 0
 };
 let pitanje9 = {
-    tekst: "Stenli Kjubrik je rodjen u :",
-    odgovori: ["Njujorku", "Cikagu", "Los Andjelesu", "San Francisku"],
-    indeksTacnogOdgovora: 0
+    tekst: "Njegov film Isijavanje je po zanru :",
+    odgovori: ["Drama", "Komedija", "Biografisijski", "Horror"],
+    indeksTacnogOdgovora: 3
 };
 let pitanje10 = {
-    tekst: "Stenli Kjubrik je rodjen u :",
-    odgovori: ["Njujorku", "Cikagu", "Los Andjelesu", "San Francisku"],
+    tekst: "Po njegovom scenariju se 2021. godine pravi serija po imenu :",
+    odgovori: ["Napoleon", "This is Us", "Ozark", "Mad Men"],
     indeksTacnogOdgovora: 0
 };
 
-let pitanja = [pitanje1, pitanje2, pitanje3, pitanje4, pitanje5, pitanje6, pitanje7,pitanje8,pitanje9,pitanje10];
+let pitanja = [pitanje1, pitanje2, pitanje3, pitanje4, pitanje5, pitanje6, pitanje7, pitanje8, pitanje9, pitanje10];
 
 //Permutacija niza
 
@@ -100,7 +100,6 @@ let strukturaKviza = (niz, callback) => {
         //Cekiranje prvih radiio button-a
 
         let cekiran = document.querySelector(`input[value2="0${i}"]`);
-        // let cekiran = document.getElementsByClassName(`odgovor${j}${i}`)
         cekiran.setAttribute("checked", true);
     }    
     
@@ -129,7 +128,6 @@ let strukturaKviza = (niz, callback) => {
                 p.appendChild(ispis);
                 p.style.color = "green";
                 okvir.appendChild(p);
-                console.log(selektovani.value)
             } else {
                 let ispis = document.createTextNode(`Niste tacno odgvorili na ${i+1}. pitanje`);
                 let p = document.createElement("p");
@@ -144,7 +142,7 @@ let strukturaKviza = (niz, callback) => {
         Array.from(nizOdgovora).forEach(odgovor => {
             odgovor.disabled = true;
         })
-        //Disabel posalji button nakon submit
+        //Disable posalji button nakon submit
         dugmePosalji.disabled = true;
 
     })
